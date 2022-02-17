@@ -23,12 +23,9 @@ input{
     padding: .3rem;
     background-color: #DCDCDC;
     border: 1px solid blue;
-    /* border: none; */
 }
 input:focus{
     box-shadow: 1px 1px darkblue;
-    /* border: 1px solid blue; */
-    /* border: none; */
     outline: none;
 }
 .error-msg{
@@ -36,8 +33,10 @@ input:focus{
     font-weight: bold;
     display: none;
 }
-.error-msg::after{
-    content: '\2716';
+.error-msg button{
+    border: none;
+    color: red;
+    background-color: #ffffff;
 }
 .btn{
     border: none;
@@ -54,7 +53,7 @@ input:focus{
 .heading-text{
     text-align: center;
     margin: 1rem 0;
-
+    color: #b74b23;
 }
 
 /******    Main Part    ******/
