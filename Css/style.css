@@ -37,7 +37,7 @@ input:focus{
     display: none;
 }
 .error-msg::after{
-    content: '\26A0';
+    content: '\2716';
 }
 .btn{
     border: none;
