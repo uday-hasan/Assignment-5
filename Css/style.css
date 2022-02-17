@@ -21,6 +21,23 @@ label{
 }
 input{
     padding: .3rem;
+    background-color: #DCDCDC;
+    border: 1px solid blue;
+    /* border: none; */
+}
+input:focus{
+    box-shadow: 1px 1px darkblue;
+    /* border: 1px solid blue; */
+    /* border: none; */
+    outline: none;
+}
+.error-msg{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+.error-msg::after{
+    content: '\26A0';
 }
 .btn{
     border: none;
