@@ -1,7 +1,8 @@
+//Get input from user and make condition on input value
 function getInput(inpt) {
     const userInput = document.getElementById(inpt + '-input');
     const userValue = parseFloat(userInput.value);
-    if (userValue < 0) {
+    if (userValue < 0 || isNaN(userValue)) {
         document.getElementById(inpt + '-error').style.display = 'block';
         document.getElementById('display-expenses-balance').style.display = 'none';
         return getInput();
@@ -40,14 +41,13 @@ document.getElementById('calculate-expenses').addEventListener('click', function
     getExpenses();
 })
 
-
+// Calculating Saving
 document.getElementById('calculate-save').addEventListener('click', function () {
     const userIncomeInput = document.getElementById('income-input');
     const userIncome = parseFloat(userIncomeInput.value);
     const userbalance = getExpenses();
     const saveInput = parseFloat(document.getElementById('save').value);
     const saveValue = (saveInput / 100);
-    // const saveValue = userIncome * (saveInput / 100);
 
     const saveAmount = userIncome * saveValue;
 
