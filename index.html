@@ -10,7 +10,68 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <!------- Header Section Start ------->
+    <header>
+        <h1 class="heading-text">Money Master</h1>
+    </header>
+    <!------- Header Section End ------->
+
+    <!------- Main Section Start ------->
+    <main>
+
+        <!-- Image Section -->
+        <section>
+            <img src="Image/photo.jpg" alt="">
+        </section>
+
+        <!-- Calculating Section -->
+        <section>
+            <form action="">
+                <!-- Income Part -->
+                <h3>Income</h3>
+                <label for="Income">Income:</label>
+                <input type="text" id="income-input">
+
+                <!-- Expenses Part -->
+                <h3>Expenses</h3>
+                <label for="Food">Food:</label>
+                <input type="text" id="food-input">
+                <label for="Rent">Rent:</label>
+                <input type="text" id="rent-input">
+                <label for="Clothes">Clothes:</label>
+                <input type="text" id="clothes-input">
+                <button id="calculate-expenses" class="btn">Calculate</button>
+
+                <!-- Expenses And Balance Display -->
+                <h3>Total Expenses : <span id="total-expenses">00</span></h3>
+                <h3>Balance : <span id="balance">00</span></h3>
+
+                <!-- Saving-Bonus-Part -->
+                <section class="saving-part">
+
+                    <!-- Saving Calculation Part -->
+                    <div class="saving-calculate">
+                        <label for="Save">Save:</label>
+                        <input type="text" id="save">
+                        <p>%</p>
+                        <button class="btn" id="calculate-save">Save</button>
+                    </div>
+
+                    <!-- Saving Display Part -->
+                    <div class="saving-display">
+                        <h3>Saving Amount : <span id="save-amount">00</span></h3>
+                        <h3>Remaining Balance : <span id="remaining-amount">00</span></h3>
+                    </div>
+
+                </section>
+            </form>
+        </section>
+
+    </main>
+    <!------- Main Section End ------->
+
+
+
     <script src="JS/script.js"></script>
 </body>
 
