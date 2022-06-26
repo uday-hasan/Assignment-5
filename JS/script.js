@@ -1,3 +1,6 @@
+const onload = () => {
+    document.getElementById('heading-text').classList.add('onload');
+}
 //Get input from user and make condition on input value
 function getInput(inpt) {
     const userInput = document.getElementById(inpt + '-input');
